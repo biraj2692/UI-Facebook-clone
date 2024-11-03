@@ -33,5 +33,4 @@ This project is a replica of the Facebook user interface, created using basic HT
 2. Navigate to the project directory:
   ```bash
   cd facebook-ui-clone
-
-3.Open index.html in your browser to view the project.
+3. 3.Open index.html in your browser to view the project.
