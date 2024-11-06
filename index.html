@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the document -->
     <title>Facebook Clone</title>
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome script for icons -->
+    <script src="https://kit.fontawesome.com/30ea7b2d1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
+        <!-- Navigation left section -->
         <div class="nav-left">
-        <ul>
-            <li><img src="images/logo.png" class="logo" alt="" srcset=""></li>
-            <div class="search-box">
-                <img src="images/search.png" alt="">
-                <input type="text" placeholder="Search Facebook"> 
-            </div>
-        </ul>    
+            <ul>
+                <li><img src="UI Icons/icons8-facebook-48.png" class="logo" alt="" srcset=""></li>
+                <!-- Search box -->
+                <div class="search-box">
+                    <img src="images/search.png" alt="">
+                    <input type="text" placeholder="Search Facebook"> 
+                </div>
+            </ul>    
         </div>
 
+        <!-- Navigation center section -->
         <div class="nav-center">
             <ul>
-                <li><a href="#"><img src="images/home.png" alt="Home"></a></li>
+                <!-- Navigation links -->
+                <li><a href="index.html"><img src="images/home.png" alt="Home"></a></li>
                 <li><a href="#"><img src="images/friend.png" alt="Friends"></a></li>
                 <li><a href="#"><img src="images/video.png" alt="Videos"></a></li>
                 <li><a href="#"><img src="images/marketplace.png" alt="MarketPlace"></a></li>
@@ -29,19 +40,191 @@
             </ul>
         </div>
         
+        <!-- Navigation right section -->
         <div class="nav-right">
             <ul>
+                <!-- Menu icons -->
                 <li><img src="images/dots-menu.png" class="menu" alt="" srcset=""></li>
                 <li><img src="images/messenger.png" class="messenger" alt="" srcset=""></li>
                 <li><img src="images/bell.png" class="bell" alt="" srcset=""></li>
-            <div class="nav-user-icon online">
-                <li><img src="images/user.png" class="user" alt="" srcset=""></li>
-            </div>
+                <!-- User icon -->
+                <div class="nav-user-icon online">
+                    <li><img src="images/profile-pic.png" class="user" alt="" srcset="" style="border-radius: 50%; width: 35px; height: 35px;"></li>
+                </div>
             </ul>
         </div>
-
     </header>
     
+    <main>
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href=""><img src="UI Icons/profile.png" alt="" srcset="">Biraj Desai</a>
+                <a href=""><img src="UI Icons/friend.png" alt="" srcset="">Friends</a>
+                <a href=""><img src="UI Icons/memories.png" alt="" srcset="">Memories</a>
+                <a href=""><img src="UI Icons/saved.png" alt="" srcset="">Saved</a>
+                <a href=""><img src="UI Icons/groups.png" alt="" srcset="">Groups</a>
+                <a href=""><img src="UI Icons/video.png" alt="" srcset="">Videos</a>
+                <a href=""><img src="UI Icons/market.png" alt="" srcset="">Marketplace</a>
+                <a href=""><img src="UI Icons/feed.png" alt="" srcset="">Feeds</a>
+                <a href=""><img src="UI Icons/Ads-manager.png" alt="" srcset="">Ads Manager</a>
+                <a href=""><img src="UI Icons/fundraiser.png" alt="" srcset="">Fundraisers</a>
+                <a href=""><img src="UI Icons/" alt="" srcset="">See more</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href=""><img src="images/shortcut-1.png" alt="" srcset="">Web Developers</a>
+                <a href=""><img src="images/shortcut-2.png" alt="" srcset="">Web Design Course</a>
+                <a href=""><img src="images/shortcut-3.png" alt="" srcset="">Full Stack Development</a>
+                <a href=""><img src="images/shortcut-4.png" alt="" srcset="">Webitse Experts</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-2.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-3.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-1.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-9.png" alt="">
+                    <p>Post Story</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Doe</p>
+                        <small>Public </small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+
+                    <div class="add-post-links">
+                        <a href=""><img src="images/live-video.png" alt="">Live Video</a>
+                        <a href=""><img src="images/photo.png" alt="">Photo/Video</a>
+                        <a href=""><img src="images/feeling.png" alt="">Feeling/Activity</a>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Doe</p>
+                        <span>Nov 6 2024 8:58 PM</span>
+                    </div>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet rerum alias porro! Explicabo et, repellendus aperiam quo ratione consectetur. Illo mollitia fugiat autem, recusandae facilis officia error unde harum quam?  <a href="">#Youtube Channel</a> </p>
+                <img src="images/feed-image-1.png" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <a href=""><i class="fa-solid fa-thumbs-up"></i> 1200</a>
+                        <a href=""><i class="fa-solid fa-comment"></i> 450</a>
+                        <a href=""><i class="fa-solid fa-share"></i> 100</a>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.png" alt=""> <i class="fas fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="right-sidebar">
+            <div class="sidebar-title-top">
+                <h3>Birthdays</h3>
+            </div>
+
+            <div class="online-list">
+                <div class="grp">
+                    <img src="images/member-4.png" alt="">
+                </div>
+                <p>Today is <b>Narendra Modi's</b> Birthday</p>
+            </div>
+
+            <div class="sidebar-title">
+                <h3>Contacts</h3>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a> 
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-5.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-4.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+            <div class="sidebar-title">
+                <h3>Community Chats</h3>
+            </div>
+
+            <div class="online-list">
+                <div class="grp">
+                    <img src="images/member-4.png" alt="">
+                </div>
+                <p>House Accomodation</p>
+            </div>
+
+            <div class="sidebar-title">
+                <h3>Group Chats</h3>
+            </div>
+
+            <div class="online-list">
+                <div class="grp">
+                    <img src="images/member-4.png" alt="">
+                </div>
+                <p>Family Group</p>
+            </div>
+            
+        </div>
+    </main>
+
     <script src="scripts.js"></script>
 </body>
 </html>

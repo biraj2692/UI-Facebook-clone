@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Set a base font size and family for the entire site */
@@ -19,14 +20,21 @@ header {
     background-color: #1876f2;
     color: #1c1e21;
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0 ;
+    z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-left, .nav-right, .nav-right ul {
+.nav-left, .nav-right ul, .nav-right{
     display: flex;
-    align-items: center;
+    align-items:flex-start ;
     list-style: none;
+    flex-basis: 25%;
+    padding: 0px 20px;
+    justify-content: space-between;
 }
+
 
 .nav-center {
     display: flex;
@@ -40,11 +48,11 @@ header {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 70%; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
 }
 
 .logo {
-    width: 160px;
+    width: 40;
     margin-right: 1px; /* Adjusted margin */
 }
 
@@ -104,4 +112,301 @@ header {
     height: 10px;
     background: #4caf50;
     border-radius: 50%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+}
+
+.left-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    padding: 20px;
+    align-self: flex-start;
+    
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
+}
+
+.main-content{
+    background: #f0f2f5;
+    flex-basis: 47%;
+}
+
+.imp-links a, .shortcut-links a{
+    text-decoration: none;
+    color: #1c1e21;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+.imp-links a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.imp-links a:last-child{
+    color: #1876f2;
+}
+
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.shortcut-links p{
+    font-size: 1.2rem;
+    margin: 25px 0;
+    font-weight: 500;
+    color: #626262; 
+}
+
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    padding: 20px;
+}
+
+.sidebar-title, .sidebar-title-top{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.sidebar-title{
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.online-list .online{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+}
+
+.online-list .online::after{
+    top:unset;
+    bottom: 0;
+}
+
+.online-list .grp{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.online-list .grp img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.story-gallery{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.story{
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.story img{
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: 10px;
+    left:10px;
+    border: 2px solid #1876f2;
+}
+
+.story p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.story1{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/status-1.png);
+}
+.story2{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/status-2.png);
+}
+.story3{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/status-3.png);
+}
+.story4{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/status-4.png);
+}
+.story5{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/status-5.png);
+}
+
+.story.story1 img{
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
+}
+
+.write-post-container{
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-input-container{
+    padding: 20px 0 0 55px;
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    resize: none;
+    border-bottom: 1px solid #ccc;
+    background:transparent;
+}
+
+.add-post-links{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.add-post-links a{
+    display: flex;
+    align-items: center;
+    color: #626262;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.add-post-links a img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.post-container{
+    width: 100%;
+    border-radius: 6px;
+    background: #fff;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.user-profile span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #9a9a9a;
+}
+
+.post-text{
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.post-text a{
+    color: #1876f2;
+    text-decoration: none;
+}
+
+.post-img{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius:4px;
+}
+
+.post-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-row a{
+    color: #626262;
+    text-decoration: none;
+    margin: 10px 10px 0px 0px;    
+}
+
+.post-row a:hover{
+    color: #1876f2;
+
+}
+
+.post-profile-icons{
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icons img{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
