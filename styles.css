@@ -368,7 +368,7 @@ main{
 
 .post-text{
     color: #9a9a9a;
-    margin: 15px 0;
+    margin: 0 0 15px 0;
     font-size: 15px;
 }
 
@@ -386,7 +386,7 @@ main{
 .post-row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .post-row a{
@@ -409,4 +409,36 @@ main{
     width: 20px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.post-row a{
+    color: #626262;
+    text-decoration: none;    
+}
+
+.load-more{
+    display: block;
+    color: #1876f2;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: auto;
+    border: 1px solid #9a9a9a;
+    color: #626262;
+    cursor: pointer;
+    border-radius: 4px;
+    background: transparent;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: #f0f2f5;
+    font-size: small;
+    padding: 10px 20px;
+    color: #626262;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
